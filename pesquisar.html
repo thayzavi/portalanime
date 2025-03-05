@@ -51,58 +51,9 @@
             type="text" maxlength="900" placeholder=" O que você quer assistir ?"/>
             <button id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
     </div>
-    <div id="animeList" style="color: azure; margin-top: 24px; text-align: center; font-size: 15px; gap: 0.5rem;"></div>
+    <div id="animeList"></div>
 </body>
-<script>
-    let animes = [];
-
-    // 📌 Função para buscar os animes do arquivo JSON
-    async function loadAnimes() {
-        try {
-            const response = await fetch('animes.json'); // Lê o arquivo JSON
-            animes = await response.json(); // Converte para JavaScript
-        } catch (error) {
-            console.error("Erro ao carregar o JSON:", error);
-            document.getElementById('animeList').innerHTML = "<p>Erro ao carregar os dados.</p>";
-        }
-    }
-
-    // 📌 Função para filtrar os animes conforme o usuário digita
-    function searchAnimes() {
-        const query = document.getElementById('search-input').value.toLowerCase();
-        const animeList = document.getElementById('animeList');
-        animeList.innerHTML = ""; // Limpa os resultados anteriores
-
-        if (query.length > 2) {  // Só pesquisa se tiver pelo menos 3 letras
-            const filteredAnimes = animes.filter(anime => anime.nome.toLowerCase().includes(query));
-
-            if (filteredAnimes.length > 0) {
-                filteredAnimes.forEach(anime => {
-                    const div = document.createElement("div");
-                    div.classList.add("anime-item");
-                    div.innerHTML = `
-                        <h3>${anime.nome}</h3>
-                        <img src="${anime.imagem}" alt="${anime.nome}">
-                        <p>${anime.descricao}</p>
-                    `;
-                    animeList.appendChild(div);
-                });
-            } else {
-                animeList.innerHTML = "<p>Nenhum anime encontrado.</p>";
-            }
-        } else {
-            animeList.innerHTML = "<p>Digite pelo menos 3 caracteres.</p>";
-        }
-    }
-
-    // 📌 Quando a página carrega, busca os dados do JSON
-    window.onload = loadAnimes;
-
-    // 📌 Eventos para ativar a pesquisa
-    document.getElementById('search-button').addEventListener('click', searchAnimes);
-    document.getElementById('search-input').addEventListener('input', searchAnimes);
-</script>
-
 
 <script src="js/script.js"></script>
+<script src="js/pesquisar.js"></script>
 </html>

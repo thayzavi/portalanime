@@ -77,12 +77,12 @@ header{
 .menu-lateral a:hover{
     background-color: #ff5e00;
 }
-animeList{
+#animeList{
     color: azure; 
     margin-top: 24px; 
     text-align: center; 
-    font-size: 10px; 
-    padding: 15px;
+    font-size: 0.9rem; 
+    padding: 15px 8%;
 }
 .container-busca {
     justify-content: center;  /* Centraliza horizontalmente */
@@ -102,12 +102,10 @@ animeList{
     background-color: #494949;
     border: none;
     padding: 10px 70px;
-    text-overflow: ellipsis;
     color: #ff5e00e1;
-    overflow: hidden;
-    white-space: nowrap;
     outline: none;
     border-radius: 50px;
+    font-size: 18px;
 }
 i{
     color: #ff5e00;
