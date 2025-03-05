@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Login</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-image: linear-gradient(#fff ,#fff, #ff9100bb);
+        background-size: cover;
+        background-position: center;
+    }
+    .container h1{
+        font-size: 36px;
+        text-align: center;
+        color: #000000;
+    }
+    .container .input-box{
+        position: relative;
+        width: 100%;
+        height: 50px;
+        margin: 30px 0 ;
+    }
+    .input-box input{
+        width: 100%;
+        height: 100%;
+        background-color: transparent;
+        outline: none;
+        border: 2px solid #535353;
+        border-radius: 40px;
+        font-size: 16px;
+        color: #000000;
+        padding: 20px 45px 20px 20px;
+    }
+    .input-box input::placeholder{
+        color: #000000;
+    
+    }.input-box i {
+        position: absolute;
+        right: 20px;
+        transform: translateY(-50%);
+        top: 50%;
+        font-size: 20px;
+        color: #4b4948;
+    }
+    .container .senha{
+        display: flex;
+        justify-content: space-between;
+        font-size: 14.5px;
+        margin: -15px 0 15px;
+        color: #000000; 
+    }
+    .senha label input {
+        accent-color: #4b4948;
+        margin-right: 3px;
+    
+    }
+    .senha a {
+        color: #000000;
+        text-decoration: none;
+    
+    }
+    .senha a:hover {
+        text-decoration: underline;
+    }
+    button{
+        width: 100%;
+        height: 45px;
+        background: #ff9100;
+        border: none;
+        outline: none;
+        border-radius: 40px;
+        cursor: pointer;
+        font-size: 16px;
+        color: #ffffff;
+        font-weight: 600;
+    }
+    .container .registrar-link{
+        font-size: 14.5px;
+        text-align: center;
+        margin: 20px 0 15px;
+    }
+    .registrar-link p a {
+        color: #000000;
+        text-decoration: none;
+        font-weight: 600;
+    }
+    .registrar-link p{
+        color: #000000;
+    }
+    .registrar-link p a:hover{
+        text-decoration: underline;
+    }
+    #logo{
+    width: 100px;
+    height: auto;
+    font-size: 5rem;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    }
+    .container p{
+        text-align: center;
+    }
+    .container p a{
+        text-decoration: none;
+        color: #ff9100;
+        font-weight: 700;
+    }
+</style>
+<body>
+    <div class="container">
+        <form action="">
+            <i class="fa-solid fa-user-astronaut" id="logo"></i>
+            <br>
+            <div class="input-box">
+                <input type="text" id="Usuario" placeholder="Usuário" required>
+                <i class="fa-regular fa-user"></i>
+            </div>
+            <div class="input-box">
+                <input type="password" id="senha" placeholder="Senha" required>
+                <i class="fa-solid fa-lock"></i>
+            </div>
+            <div class="class-btn">
+               <button type="button" onclick="validarFormulario()">Entrar</button>
+            </div>
+            <br>
+            <p> Ainda não possui uma conta? <a href="cadastro.html">Cadastre-se</a></p>
+        </form>
+    </div>
+    <script src="js/login.js"></script>
+</body>
+</html>

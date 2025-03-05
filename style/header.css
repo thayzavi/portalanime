@@ -1,0 +1,142 @@
+
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    padding: 28px 8%;
+    position: sticky;
+    top: 0 ;
+    background-color: #141414;
+    z-index: 3;
+}
+#navbar{
+    width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#nav-logo {
+    font-size: 24px;
+    color: #ff5e00;
+}
+#nav_list{
+    display: flex;
+    list-style: none;
+    gap: 48px;
+}
+.nav-item a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+}
+.nav-item.active a{
+    color: #ffffff;
+    border-bottom: 3px solid #ff5e00;
+}
+#mobile_btn{
+    display: none;
+    color: #ff5e00;
+}
+#mobile_menu{
+    display: none;
+}
+.lateral{
+    position: relative;
+    display: block;
+}
+#pesquisa{
+    background: #141414;
+    border: none;
+}
+.lateral i{
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    color: #ff5e00;
+}
+.menu-lateral{
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #ff5e00;
+    width: 250px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.5);
+    padding: 10px;
+}
+.menu-lateral a{
+    display: block;
+    color: #ffffff;
+    padding: 10px;
+    text-decoration: none;
+}
+.menu-lateral a:hover{
+    background-color: #ff5e00;
+}
+animeList{
+    color: azure; 
+    margin-top: 24px; 
+    text-align: center; 
+    font-size: 10px; 
+    padding: 15px;
+}
+.container-busca {
+    justify-content: center;  /* Centraliza horizontalmente */
+    align-items: center;  /* Centraliza verticalmente */
+    margin-top: 0.9rem;
+    display: flex;
+    gap: 0.5rem;
+}
+#search-button{
+    background: #000000;
+    border: none;
+    padding: 0.3rem;
+    cursor: pointer;
+    
+}
+#search-input{
+    background-color: #494949;
+    border: none;
+    padding: 10px 70px;
+    text-overflow: ellipsis;
+    color: #ff5e00e1;
+    overflow: hidden;
+    white-space: nowrap;
+    outline: none;
+    border-radius: 50px;
+}
+i{
+    color: #ff5e00;
+}
+
+@media screen and (max-width: 1170px) {
+    #nav_list, #navbar .btn-default{
+        display: none;
+    }
+    #mobile_btn{
+        display: block;
+        border: none;
+        background-color: transparent;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+    #mobile_menu.active{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #mobile_nav-list{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin: 12px 0px;
+    }
+    #mobile_nav-list .nav-item {
+        list-style: none;
+        text-align: center;
+    } 
+} 

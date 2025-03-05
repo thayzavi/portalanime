@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #ffffff;
+    background-size: cover;
+    background-position: center;
+}
+.container h1{
+    font-size: 36px;
+    text-align: center;
+    color: #000000;
+}
+.container .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0 ;
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid #535353;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #000000;
+    padding: 20px 45px 20px 20px;
+}
+.input-box input::placeholder{
+    color: #000000;
+
+}.input-box i {
+    position: absolute;
+    right: 20px;
+    transform: translateY(-50%);
+    top: 50%;
+    font-size: 20px;
+    color: #4b4948;
+}
+.container .senha{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+    color: #000000; 
+}
+.senha label input {
+    accent-color: #4b4948;
+    margin-right: 3px;
+
+}
+.senha a {
+    color: #000000;
+    text-decoration: none;
+
+}
+.senha a:hover {
+    text-decoration: underline;
+}
+button{
+    width: 100%;
+    height: 45px;
+    background: #1726ff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px #fff7f7;
+    cursor: pointer;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 600;
+}
+.container .registrar-link{
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+.registrar-link p a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 600;
+}
+.registrar-link p{
+    color: #000000;
+}
+.registrar-link p a:hover{
+    text-decoration: underline;
+}
+.logo{
+width: 100px;
+height: auto;
+display: block;
+margin: 0 auto;
+}

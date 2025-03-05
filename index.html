@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site para os amantes de anime.">
+    <link rel="stylesheet" href="style/style.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="manifest" href="manifest.json" crossorigin="use-credentials" />
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title> AnimeApp - Seu Portal de Animes </title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <a href="index.html"><i class="fa-solid fa-user-astronaut" id="nav-logo"> Anime </i></a>
+
+            <ul id="nav_list">
+                <li class="nav-item active">
+                    <a href="#home">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu">Catálogo</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#comentarios">Avaliações</a>
+                </li>
+            </ul>
+            
+            <div class="lateral">
+                <i class="fa-regular fa-user" onclick="ToggleEvent()"></i>
+                <div class="menu-lateral" id="menulateral">
+                    <a href="cadastro.html">Criar conta</a>
+                    <a href="login.html">Login</a>
+                    <a href="index.html">Desconectar</a>
+                </div>
+                <a href="pesquisar.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+            </div>
+
+            <button id="mobile_btn">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+        <div id="mobile_menu">
+            <nav id="navbar_mobile">
+    
+                <ul id="mobile_nav-list">
+                    <li class="nav-item">
+                        <a href="#home">Ínicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#menu">Catálogo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#avaliação">Avaliações</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main id="content">
+        <section id="home">
+            <img src="img/icon-okarun-turbo.webp" class="home-img" alt="img-principal" loading="lazy">
+
+            <div id="avaliacao_content">
+
+                <div id="cta-home">
+                    <div class="cta">
+
+                        <div class="cta-content">
+                            <h1 class="title">
+                                Uma amostra da temporada de 
+                                 <span>inverno 2025</span></h1>
+                        </div>    
+                 </div>
+            </div>
+        </section>
+
+        <section id="menu">
+            <h2 class="section-title">Destaques 2025</h2>
+            <p>Assista os três primeiros episódios desses simulcasts da inverno 2025 de graça!</p>
+
+            <div id="dishes">
+                <div class="dish">
+                    <img src="img/chainsaw (1).webp" class="dish-image" alt="chainsaw" loading="lazy">
+                    <div class="overlay">
+                        <p>chainsaw</p>
+                        <p>4.9 <i class="fa-solid fa-star"></i> (374k) </p>
+                    </div>
+                    <h3 class="dish-title"> chainsaw <br> Dub | Leg</h3>
+                </div>
+            
+                <div class="dish">
+                    <img src="img/Dandadan anime‼️‼️‼️ (1).webp" class="dish-image" alt="Dandadan" loading="lazy">
+                    <div class="overlay">
+                        <p>Dan dan dan</p>
+                        <p>4.9 <i class="fa-solid fa-star"></i> (160k) </p>
+                    </div>
+                    <h3 class="dish-title"> Dandandan <br> Dub | Leg</h3>
+                </div>
+                <div class="dish">
+                    <img src="img/Mashle (1).webp" class="dish-image" alt="Mashle" loading="lazy">
+                    <div class="overlay">
+                        <p> Mashle</p>
+                        <p>4.8 <i class="fa-solid fa-star"></i> (164k) </p>
+                    </div>
+                    <h3 class="dish-title"> Mashle <br> Dub | Leg</h3>
+                </div>
+                <div class="dish">
+                    <img src="img/Dr_ Stone (1).webp" class="dish-image" alt="Dr_ Stone" loading="lazy">
+                    <div class="overlay">
+                        <p>Dr.Stone</p>
+                        <p>4.8 <i class="fa-solid fa-star"></i> (132k) </p>
+                    </div>
+                    <h3 class="dish-title"> Dr.Stone <br> Dub | Leg</h3>
+                </div>
+            </div>
+            <div id="dishes">
+                <div class="dish">
+                    <img src="img/bleach (1).webp" class="dish-image" alt="bleach" loading="lazy">
+                    <div class="overlay">
+                        <p>Bleach</p>
+                        <p>4.9 <i class="fa-solid fa-star"></i> (341.6k) </p>
+                    </div>
+                    <h3 class="dish-title"> Bleach <br> Dub | Leg</h3>
+                </div>
+            
+                <div class="dish">
+                    <img src="img/attack (1).webp" class="dish-image" alt="attack" loading="lazy">
+                    <div class="overlay">
+                        <p>Attack on Titan</p>
+                        <p>4.9 <i class="fa-solid fa-star"></i> (341.6k) </p>
+                    </div>
+                    <h3 class="dish-title"> Attack on Titan <br> Dub | Leg</h3>
+                </div>
+                <div class="dish">
+                    <img src="img/jjk (1).webp" class="dish-image" alt="jjk" loading="lazy">
+                    <div class="overlay">
+                        <p>JUJUTSU KAISEN</p>
+                        <p>4.9 <i class="fa-solid fa-star"></i> (492k) </p>
+                    </div>
+                    <h3 class="dish-title">JUJUTSU KAISEN <br> Dub | Leg</h3>
+                    
+                </div>
+                <div class="dish">
+                    <img src="img/demon (1).webp" class="dish-image" alt="demon" loading="lazy">
+                    <div class="overlay">
+                        <p>Demon Slayer</p>
+                        <p>4.9 <i class="fa-solid fa-star"></i> (576k) </p>
+                    </div>
+                    <h3 class="dish-title">Demon Slayer <br> Dub | Leg</h3>
+                </div>
+            </div>
+        </section>
+
+            <section id="cards">
+                <img src="img/Solo Leveling (Wallpaper engine) (1).webp" class="card-img" alt="Solo Leveling" loading="lazy">
+                <div id="content">
+                    <h2 class="section-title">
+                        Solo leveling
+                    </h2>
+                    <hr>
+                    <div id="card-tx">
+                        <div class="cards-sub">
+    
+                            <div class="content">
+                                <p>
+                                Há mais de uma década, surgiu uma misteriosa passagem chamada "portal", que conecta este mundo a uma dimensão diferente, o que fez com que pessoas despertassem poderes 
+                                únicos… e essas pessoas são chamadas de "caçadores". Os caçadores usam seus poderes sobre-humanos para conquistar masmorras dentro dos portais e assim ganhar a vida.
+                                Sung Jinwoo, um caçador de nível baixo, é considerado o caçador mais fraco de toda a humanidade. Certo dia, ele se depara"
+                                </p>
+                                <p>
+                                    <span>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+    
+                        <button class="btn-default-card">
+                            <i class="fa fa-play" aria-hidden="true"></i> Assistir 
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+        <section id="comentarios">
+            <img src="img/turbo abuela _ Dandadan _ 7 (1).webp" class="testimonial" alt="img-velha turbo" loading="lazy">
+
+            <div id="avaliacao_content">
+                <h2 class="section-title">
+                    Comentarios
+                </h2>
+
+                <div id="feedbacks">
+                    <div class="feedback">
+                        <img src="img/712976184791549083 (1).webp" alt="img-avatar" class="avatar" loading="lazy">
+
+                        <div class="feedback-content">
+                            <p>
+                                Fulana de Tal
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>
+                                "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Repellat voluptatibus cumque dolor ea est quae alias necessitatibus"
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="feedback">
+                        <img src="img/712976184791549083 (1).webp" alt="avatar" class="avatar" loading="lazy">
+
+                        <div class="feedback-content">
+                            <p>
+                                Fulana de Tal
+                                <span>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </span>
+                            </p>
+                            <p>
+                                "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Repellat voluptatibus cumque dolor ea est quae alias necessitatibus"
+                            </p>
+                        </div>
+                    </div>
+                    <button class="btn-default-feedback">
+                        Ver mais avaliações
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer_item">
+            <span id="copyright">
+                &copy 2025 Thayza Silva
+            </span>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

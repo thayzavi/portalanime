@@ -1,0 +1,28 @@
+{
+"name":"Anime Streaming",
+"short_name": "AnimeApp",
+"description" :"Uma plataforma para assistir e descobrir animes",
+"start_url":"index.html",
+"scope":"/",
+"display":"standalone",
+"background_color":"#000000",
+"theme_color":"#ff4500",
+"orientation":"portrait",
+"icons":[
+    {
+        "src":"img.icons/ic_launcher.png",
+        "sizes": "192x192",
+        "type": "image/png"
+    },
+    {
+        "src":"img.icons/playstore.png",
+        "sizes": "512x512",
+        "type": "image/png"
+    },
+    {
+        "src":"img.icons/appstore.png",
+        "sizes": "1024x1024",
+        "type": "image/png"
+    }
+]
+}

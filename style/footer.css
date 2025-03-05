@@ -1,0 +1,20 @@
+footer {
+    background-color: #ff6106e5;
+}
+.footer_item {
+    display: flex;
+    padding: 0px 8% 20px 8%;
+    align-items: center;
+}
+
+#copyright {
+    color: #000000;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 600px) {
+    .footer_item {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
