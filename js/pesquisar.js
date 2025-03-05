@@ -25,7 +25,7 @@ function searchAnimes(){
             filteredAnimes.forEach(anime => {
                 const div = document.createElement("div");
                 div.classList.add("anime-item");
-                div.innerHTML =`<h3>${anime.nome}}</h3>
+                div.innerHTML =`<h3>${anime.nome}</h3>
                 <img src="${anime.imagem}" alt="${anime.nome}">
                 <p>${anime.descricao}</p>`;
 
