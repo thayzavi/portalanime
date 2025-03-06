@@ -104,6 +104,8 @@ header{
     padding: 10px 70px;
     color: #ff5e00e1;
     outline: none;
+    overflow: hidden;
+    white-space: nowrap;
     border-radius: 50px;
     font-size: 18px;
 }
